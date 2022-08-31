@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Another from './Another';
 import logo from './logo.svg';
-import './App.css';
+import '../App.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +17,7 @@ function App() {
   const someStyle = {
     background: 'blue',
     color: 'white',
-    fontSize: '28',
+    fontSize: '28px',
     fontWeight: 'bold',
   };
 
@@ -32,7 +32,7 @@ function App() {
         </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         {true && <p style={someStyle}>{3 + 2}</p>}
         <a
