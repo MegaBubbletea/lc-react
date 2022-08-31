@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Another from "./Another";
+import React, { useState } from 'react';
+import Another from './Another';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
   }
 
   function increment() {
-    setCount(prevCount => prevCount + 1)
+    setCount(prevCount => prevCount + 1);
   }
 
   const someStyle = {
@@ -19,7 +19,7 @@ function App() {
     color: 'white',
     fontSize: '28',
     fontWeight: 'bold',
-  }
+  };
 
   return (
     <div className="App">
@@ -34,9 +34,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        { true &&
-          <p style={someStyle}>{ 3 + 2 }</p>
-        }
+        {true && <p style={someStyle}>{3 + 2}</p>}
         <a
           className="App-link"
           href="https://reactjs.org"
