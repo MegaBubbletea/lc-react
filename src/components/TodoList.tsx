@@ -13,7 +13,7 @@ TodoList.propTypes = {
   updateTodo: PropTypes.func.isRequired,
   cancelEdit: PropTypes.func.isRequired,
   deleteTodo: PropTypes.func.isRequired,
-  remaining: PropTypes.func.isRequired,
+  remaining: PropTypes.number.isRequired,
   clearCompleted: PropTypes.func.isRequired,
   completeAllTodos: PropTypes.func.isRequired,
 };
@@ -38,7 +38,7 @@ interface TodoList {
   ): void;
   cancelEdit(id: number): void;
   deleteTodo(id: number): void;
-  remaining(): number;
+  remaining: number;
   clearCompleted(): void;
   completeAllTodos(): void;
 }
